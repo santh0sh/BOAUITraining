@@ -1,0 +1,13 @@
+const readLine=require("readline");
+const r1=readLine.createInterface({
+    input:process.stdin,
+    output:process.stdout
+})
+r1.question("What is your name?",function(name){
+   console.log(name);
+   r1.close();
+});
+
+r1.on('close',function(){
+    process.exit(0);
+})
